@@ -8,6 +8,7 @@
 
 #import "NextViewController.h"
 #import "Masonry.h"
+#import "LastViewController.h"
 @interface NextViewController ()
 
 @end
@@ -66,6 +67,17 @@
     [container mas_makeConstraints:^(MASConstraintMaker *make) {
         make.bottom.equalTo(lastView.mas_bottom);
     }];
+    
+    
+     UIBarButtonItem *releaseButon=[[UIBarButtonItem alloc] initWithTitle:@"last" style:UIBarButtonItemStylePlain target:self action:@selector(releaseInfo)];
+     self.navigationItem.rightBarButtonItem=releaseButon;
+    
+}
+
+-(void)releaseInfo
+{
+    LastViewController *last=[[LastViewController alloc]init];
+    [self.navigationController pushViewController:last animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

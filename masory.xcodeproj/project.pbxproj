@@ -17,6 +17,8 @@
 		EA7875E21CA8CD3500008BE5 /* masoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7875E11CA8CD3500008BE5 /* masoryTests.m */; };
 		EA7875ED1CA8CD3500008BE5 /* masoryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7875EC1CA8CD3500008BE5 /* masoryUITests.m */; };
 		EA7875FC1CA8D70500008BE5 /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7875FB1CA8D70500008BE5 /* NextViewController.m */; };
+		EA78760B1CA9292700008BE5 /* UIView+Masonry.m in Sources */ = {isa = PBXBuildFile; fileRef = EA78760A1CA9292700008BE5 /* UIView+Masonry.m */; };
+		EA78760E1CA9298B00008BE5 /* LastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA78760D1CA9298B00008BE5 /* LastViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,10 @@
 		EA7875EE1CA8CD3500008BE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA7875FA1CA8D70500008BE5 /* NextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
 		EA7875FB1CA8D70500008BE5 /* NextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
+		EA7876091CA9292700008BE5 /* UIView+Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Masonry.h"; sourceTree = "<group>"; };
+		EA78760A1CA9292700008BE5 /* UIView+Masonry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Masonry.m"; sourceTree = "<group>"; };
+		EA78760C1CA9298B00008BE5 /* LastViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LastViewController.h; sourceTree = "<group>"; };
+		EA78760D1CA9298B00008BE5 /* LastViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LastViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +134,8 @@
 		EA7875C61CA8CD3500008BE5 /* masory */ = {
 			isa = PBXGroup;
 			children = (
+				EA7876091CA9292700008BE5 /* UIView+Masonry.h */,
+				EA78760A1CA9292700008BE5 /* UIView+Masonry.m */,
 				EA7875CA1CA8CD3500008BE5 /* AppDelegate.h */,
 				EA7875CB1CA8CD3500008BE5 /* AppDelegate.m */,
 				EA7875CD1CA8CD3500008BE5 /* ViewController.h */,
@@ -139,6 +147,8 @@
 				EA7875C71CA8CD3500008BE5 /* Supporting Files */,
 				EA7875FA1CA8D70500008BE5 /* NextViewController.h */,
 				EA7875FB1CA8D70500008BE5 /* NextViewController.m */,
+				EA78760C1CA9298B00008BE5 /* LastViewController.h */,
+				EA78760D1CA9298B00008BE5 /* LastViewController.m */,
 			);
 			path = masory;
 			sourceTree = "<group>";
@@ -351,8 +361,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA7875CF1CA8CD3500008BE5 /* ViewController.m in Sources */,
+				EA78760B1CA9292700008BE5 /* UIView+Masonry.m in Sources */,
 				EA7875FC1CA8D70500008BE5 /* NextViewController.m in Sources */,
 				EA7875CC1CA8CD3500008BE5 /* AppDelegate.m in Sources */,
+				EA78760E1CA9298B00008BE5 /* LastViewController.m in Sources */,
 				EA7875C91CA8CD3500008BE5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
