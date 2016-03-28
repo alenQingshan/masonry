@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A3F7CBC39AC0E1773846235 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41BF6BE0A873EB2CC305C9A2 /* libPods.a */; };
 		EA7875C91CA8CD3500008BE5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7875C81CA8CD3500008BE5 /* main.m */; };
 		EA7875CC1CA8CD3500008BE5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7875CB1CA8CD3500008BE5 /* AppDelegate.m */; };
 		EA7875CF1CA8CD3500008BE5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7875CE1CA8CD3500008BE5 /* ViewController.m */; };
@@ -15,6 +16,7 @@
 		EA7875D71CA8CD3500008BE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA7875D51CA8CD3500008BE5 /* LaunchScreen.storyboard */; };
 		EA7875E21CA8CD3500008BE5 /* masoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7875E11CA8CD3500008BE5 /* masoryTests.m */; };
 		EA7875ED1CA8CD3500008BE5 /* masoryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7875EC1CA8CD3500008BE5 /* masoryUITests.m */; };
+		EA7875FC1CA8D70500008BE5 /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7875FB1CA8D70500008BE5 /* NextViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2EB2FBF0367E46C159E7716A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		41BF6BE0A873EB2CC305C9A2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA7C220A6C628936875889C5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		EA7875C41CA8CD3500008BE5 /* masory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = masory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA7875C81CA8CD3500008BE5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EA7875CA1CA8CD3500008BE5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +56,8 @@
 		EA7875E81CA8CD3500008BE5 /* masoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = masoryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA7875EC1CA8CD3500008BE5 /* masoryUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = masoryUITests.m; sourceTree = "<group>"; };
 		EA7875EE1CA8CD3500008BE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA7875FA1CA8D70500008BE5 /* NextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
+		EA7875FB1CA8D70500008BE5 /* NextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A3F7CBC39AC0E1773846235 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +86,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5194B54602949125A4B5A9B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AA7C220A6C628936875889C5 /* Pods.debug.xcconfig */,
+				2EB2FBF0367E46C159E7716A /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		52767E9A389A7C10531183F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				41BF6BE0A873EB2CC305C9A2 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EA7875BB1CA8CD3500008BE5 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +110,8 @@
 				EA7875E01CA8CD3500008BE5 /* masoryTests */,
 				EA7875EB1CA8CD3500008BE5 /* masoryUITests */,
 				EA7875C51CA8CD3500008BE5 /* Products */,
+				5194B54602949125A4B5A9B2 /* Pods */,
+				52767E9A389A7C10531183F8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +137,8 @@
 				EA7875D51CA8CD3500008BE5 /* LaunchScreen.storyboard */,
 				EA7875D81CA8CD3500008BE5 /* Info.plist */,
 				EA7875C71CA8CD3500008BE5 /* Supporting Files */,
+				EA7875FA1CA8D70500008BE5 /* NextViewController.h */,
+				EA7875FB1CA8D70500008BE5 /* NextViewController.m */,
 			);
 			path = masory;
 			sourceTree = "<group>";
@@ -147,9 +176,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA7875F11CA8CD3500008BE5 /* Build configuration list for PBXNativeTarget "masory" */;
 			buildPhases = (
+				842786E0C5EA842746821A34 /* Check Pods Manifest.lock */,
 				EA7875C01CA8CD3500008BE5 /* Sources */,
 				EA7875C11CA8CD3500008BE5 /* Frameworks */,
 				EA7875C21CA8CD3500008BE5 /* Resources */,
+				151FF281F4F24BF27705F427 /* Embed Pods Frameworks */,
+				D29746B41D74B6A72B177E48 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,12 +297,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		151FF281F4F24BF27705F427 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		842786E0C5EA842746821A34 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D29746B41D74B6A72B177E48 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EA7875C01CA8CD3500008BE5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EA7875CF1CA8CD3500008BE5 /* ViewController.m in Sources */,
+				EA7875FC1CA8D70500008BE5 /* NextViewController.m in Sources */,
 				EA7875CC1CA8CD3500008BE5 /* AppDelegate.m in Sources */,
 				EA7875C91CA8CD3500008BE5 /* main.m in Sources */,
 			);
@@ -413,6 +494,7 @@
 		};
 		EA7875F21CA8CD3500008BE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA7C220A6C628936875889C5 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = masory/Info.plist;
@@ -424,6 +506,7 @@
 		};
 		EA7875F31CA8CD3500008BE5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EB2FBF0367E46C159E7716A /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = masory/Info.plist;
@@ -498,6 +581,7 @@
 				EA7875F31CA8CD3500008BE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA7875F41CA8CD3500008BE5 /* Build configuration list for PBXNativeTarget "masoryTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +590,7 @@
 				EA7875F61CA8CD3500008BE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA7875F71CA8CD3500008BE5 /* Build configuration list for PBXNativeTarget "masoryUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +599,7 @@
 				EA7875F91CA8CD3500008BE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
