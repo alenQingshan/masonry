@@ -23,6 +23,7 @@
     [self createNewMasory];
 }
 
+
 -(void)createNewMasory
 {
     self.view.backgroundColor=[UIColor whiteColor];
@@ -31,7 +32,7 @@
     [self.view addSubview:sv];
     [sv mas_makeConstraints:^(MASConstraintMaker *make) {
         make.center.equalTo(self.view);
-        make.size.mas_equalTo(CGSizeMake(100, 100));
+        make.size.mas_equalTo(CGSizeMake(200, 200));
     }];
     
     UIView *view1=[[UIView alloc]init];
@@ -40,9 +41,9 @@
     [view1 mas_makeConstraints:^(MASConstraintMaker *make) {
        make.edges.equalTo(sv).with.insets(UIEdgeInsetsMake(10, 10, 10, 10));
     }];
-    [view1 mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(sv).with.insets(UIEdgeInsetsMake(10, 10, 10, 10));
-    }];
+//    [view1 mas_updateConstraints:^(MASConstraintMaker *make) {
+//        make.edges.equalTo(sv).with.insets(UIEdgeInsetsMake(10, 10, 10, 10));
+//    }];
     
     
     UIView *view2=[[UIView alloc]init];
@@ -70,14 +71,17 @@
         make.width.equalTo(view2);
     }];
     
-    UIButton *nextViewButton=[UIButton buttonWithType:UIButtonTypeSystem];
-    [nextViewButton setTitle:@"next" forState:UIControlStateNormal];
-    [nextViewButton setBackgroundColor:[UIColor blueColor]];
-    [nextViewButton addTarget:self action:@selector(nextViewController) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:nextViewButton];
-    [nextViewButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self.view).with.insets(UIEdgeInsetsMake(self.view.frame.size.height-10-35, self.view.frame.size.width-10-80, 10, 10));
-    }];
+//    UIButton *nextViewButton=[UIButton buttonWithType:UIButtonTypeSystem];
+//    [nextViewButton setTitle:@"next" forState:UIControlStateNormal];
+//    [nextViewButton setBackgroundColor:[UIColor blueColor]];
+//    [nextViewButton addTarget:self action:@selector(nextViewController) forControlEvents:UIControlEventTouchUpInside];
+//    [self.view addSubview:nextViewButton];
+//    [nextViewButton mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.edges.equalTo(self.view).with.insets(UIEdgeInsetsMake(self.view.frame.size.height-10-35, self.view.frame.size.width-10-80, 10, 10));
+//    }];
+    
+    UIBarButtonItem *releaseButon=[[UIBarButtonItem alloc] initWithTitle:@"next" style:UIBarButtonItemStylePlain target:self action:@selector(nextViewController)];
+    self.navigationItem.rightBarButtonItem=releaseButon;
 
 }
 

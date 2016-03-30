@@ -37,7 +37,7 @@
         make.edges.equalTo(scrollView);
         make.width.equalTo(scrollView);
     }];
-    int count = 10;
+    int count = 9;
     UIView *lastView = nil;
     for ( int i = 1 ; i <= count ; ++i )
     {
